@@ -53,7 +53,7 @@ void Particle::update(){
 //--------------------------------------------------------------
 void Particle::draw(){
     
-    ofSetColor(255);
+    ofSetColor(255, ofRandom(90,100));
     ofDrawEllipse(loc.x, loc.y, ofRandom(mass * 3,mass * 5),ofRandom(mass * 3,mass * 5));
     
    

@@ -6,6 +6,7 @@ void ofApp::setup(){
     ofSetBackgroundColor(0);
     ofEnableSmoothing();
     ofSetCircleResolution(50);
+    ofSetBackgroundAuto(false);
     
     for(int i = 0; i<TOTALNUM; i++){
         Particle p;

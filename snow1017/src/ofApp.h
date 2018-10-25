@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 #include "Particle.hpp"
-#define TOTALNUM 300
+#define TOTALNUM 500
 
 class ofApp : public ofBaseApp{
 
