@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 #include "Particle.hpp"
-#define TOTALNUM 500
+#define TOTALNUM 400
 
 class ofApp : public ofBaseApp{
 
@@ -10,12 +10,15 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+        void keyPressed(int key);
+        
+
     
        
     
     vector<Particle> particles;
     
     ofImage bg;
-
+    ofSoundPlayer lullaby;
 		
 };

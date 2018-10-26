@@ -10,7 +10,7 @@
 void Particle::setup(){
     
     
-    ofSetFrameRate(12);
+    ofSetFrameRate(10);
     mass = ofRandom(0.5, 1);
     loc.set(ofRandomWidth(), ofRandomHeight());
     vel.set(0, 0);
@@ -53,8 +53,8 @@ void Particle::update(){
 //--------------------------------------------------------------
 void Particle::draw(){
     
-    ofSetColor(255, ofRandom(90,100));
-    ofDrawEllipse(loc.x, loc.y, ofRandom(mass * 3,mass * 5),ofRandom(mass * 3,mass * 5));
+    ofSetColor(255, ofRandom(95,100));
+    ofDrawEllipse(loc.x, loc.y, ofRandom(mass * 5,mass * 5),ofRandom(mass * 5,mass * 6));
     
    
 }

@@ -15,6 +15,8 @@ void ofApp::setup(){
     }
     
     bg.load("bg.jpg");
+    lullaby.load("lullaby.mp3");
+    
     
  
 
@@ -24,12 +26,12 @@ void ofApp::setup(){
 void ofApp::update(){
     
     ofPoint wind;
-    wind.set(0.008, 0.005);
+    wind.set(0.006, 0.005);
     
     for(int i = 0; i<TOTALNUM; i++){
         
         particles[i].applyForce(wind);
-        particles[i].addGravityForce(0.008);
+        particles[i].addGravityForce(0.0008);
         
         
         particles[i].update();
@@ -54,8 +56,19 @@ void ofApp::draw(){
 
 }
 
-
-
+//--------------------------------------------------------------
+void ofApp::keyPressed(int key){
+    
+    if (key ==' ') {
+        
+        for(int i = 0; i<TOTALNUM * 2; i++){
+            particles[i].draw();
+        }
+        
+        lullaby.play();
+    }
+    
+}
 
 
 
